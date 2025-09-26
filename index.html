@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Guidance Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Step 1: Home Page -->
+<div id="homePage">
+    <h1>AI Career Guidance Tool</h1>
+    <label>Your Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    
+    <label>Currently Studying:</label>
+    <input type="text" id="study" placeholder="e.g., BCA, 12th, Engineering" required>
+    
+    <button id="nextBtn">Next</button>
+</div>
+
+<!-- Step 2: Skills/Interests Page -->
+<div id="skillsPage" style="display:none;">
+    <h2>Select your interests & skills</h2>
+    <label>Type a skill/interest:</label>
+    <input type="text" id="skillInput" placeholder="Start typing...">
+    
+    <div id="suggestions"></div>
+    
+    <h3>Selected Skills:</h3>
+    <ul id="selectedSkills"></ul>
+    
+    <button id="getCareerBtn">Get Career Suggestions</button>
+</div>
+
+<!-- Step 3: Career Suggestions -->
+<div id="careerPage" style="display:none;">
+    <h2>Career Suggestions</h2>
+    <div id="careerResults"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

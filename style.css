@@ -1,0 +1,125 @@
+/* Body & background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Gradient background */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Container styling */
+#homePage, #skillsPage, #careerPage {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    width: 400px;
+    max-width: 90%;
+}
+
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Inputs & selects */
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+/* Suggestions box */
+#suggestions {
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.suggestion {
+    padding: 8px;
+    margin: 2px 0;
+    background: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.suggestion:hover {
+    background: #d1c4e9;
+}
+
+/* Selected skills list */
+#selectedSkills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#selectedSkills li {
+    background: #6a11cb;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Career results */
+#careerResults {
+    margin-top: 15px;
+}
+
+.careerCard {
+    background: #f0f0f0;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media(max-width: 450px){
+    #homePage, #skillsPage, #careerPage {
+        padding: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
